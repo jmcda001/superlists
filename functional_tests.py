@@ -1,7 +1,7 @@
 from selenium import webdriver
 import unittest
 
-chromedriverPath = '/home/jeffrey/Documents/Tutorial/tddenv/chromedriver-Linux64'
+from superlists.settings import chromedriverPath
 
 class newVisitorTest(unittest.TestCase):
     # setUp and tearDown get run before EACH test
