@@ -1,4 +1,4 @@
-from django.test import LiveServerTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium import webdriver
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.keys import Keys
@@ -8,7 +8,7 @@ import unittest
 from superlists.settings import chromedriverPath
 
 MAX_WAIT = 10
-class newVisitorTest(LiveServerTestCase):
+class newVisitorTest(StaticLiveServerTestCase):
     # setUp and tearDown get run before EACH test
     def setUp(self):
         self.browser = webdriver.Chrome(chromedriverPath)
