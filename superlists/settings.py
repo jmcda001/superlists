@@ -15,7 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-chromedriverPath = '/home/jeffrey/Documents/Tutorials/tddenv/chromedriver-Linux64'
+chromedriverPath = os.path.join(BASE_DIR,'../tddenv/chromedriver-Linux64')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
